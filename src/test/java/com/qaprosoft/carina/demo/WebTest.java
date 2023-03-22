@@ -18,8 +18,8 @@ public class WebTest implements IAbstractTest {
         Assert.assertTrue(homePage.isPageOpened(), "Page is not opened");
         SignUpLogInPage signUpLogInPage = homePage.clickSingUpLogInBtn();
         Assert.assertTrue(signUpLogInPage.isPageOpened(), "Page is not opened");
-        signUpLogInPage.typeEmail(R.TESTDATA.get("email"));
-        signUpLogInPage.typePassword(R.TESTDATA.get("password"));
+        signUpLogInPage.typeUsername(R.TESTDATA.get("standard_user"));
+        signUpLogInPage.typePassword(R.TESTDATA.get("secret_sauce"));
         signUpLogInPage.clickLogInBtn();
         Assert.assertFalse(homePage.isPageOpened(), "Page is opened");
     }

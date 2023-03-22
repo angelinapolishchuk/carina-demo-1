@@ -32,9 +32,6 @@ import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 @DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = HomePageBase.class)
 public class HomePage extends HomePageBase {
 
-
-    @FindBy(xpath = "//*[@class='login_container']")
-    private ExtendedWebElement logInBtn;
     @FindBy(xpath = "//div[contains(@class, 'general-menu material-card')]//a")
     private List<ExtendedWebElement> brandLinks;
 
