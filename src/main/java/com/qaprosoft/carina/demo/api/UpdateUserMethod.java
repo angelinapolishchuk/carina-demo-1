@@ -12,6 +12,6 @@ import com.zebrunner.carina.utils.Configuration;
 public class UpdateUserMethod extends AbstractApiMethodV2{
 
     public UpdateUserMethod() {
-        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
+        super("api/users/_update/rq.json", "api/users/_update/rs.json");
     }
 }

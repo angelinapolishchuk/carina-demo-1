@@ -29,6 +29,6 @@ import com.zebrunner.carina.utils.Configuration;
 public class DeleteUserMethod extends AbstractApiMethodV2 {
 
     public DeleteUserMethod() {
-        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
+        super("api/users/_delete/rq.json", "api/users/_delete/rs.json");
     }
 }
